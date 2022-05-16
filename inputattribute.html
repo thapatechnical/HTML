@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomr HTML</title>
+  </head>
+  <body>
+    <!-- tell the user that we will create a wroking fomr  -->
+    <h1>HTML Registration Form</h1>
+    <br />
+    <form action="#">
+      <div>
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" value="vinod" readonly disabled  size="50"/>
+        <!-- The input value attribute specifies an initial value for an input field: -->
+        <!-- The input readonly attribute specifies that an input field is read-only. -->
+        <!-- The input disabled attribute specifies that an input field should be disabled. -->
+        <!-- The input size attribute specifies the visible width, in characters, of an input field. -->
+        <!-- The default value for size is 20. -->
+        <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field. -->
+        <input type="text" maxlength="10">
+        <!-- The input min and max attributes specify the minimum and maximum values for an input field. -->
+        <br />
+        <br />
+     
+          <label for="datemax">Enter a date before 1980-01-01:</label>
+          <input
+            type="date"
+            id="datemax"
+            name="datemax"
+            max="1979-12-31"
+          /><br /><br />
+
+          <label for="datemin">Enter a date after 2000-01-01:</label>
+          <input
+            type="date"
+            id="datemin"
+            name="datemin"
+            min="2000-01-01"
+            max="2022-01-01"
+          /><br /><br />
+
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="5"
+          /><br /><br />
+          <!-- The input multiple attribute specifies that the user is allowed to enter more than one value in an input field. -->
+           <label for="files">Select files:</label>
+          <input type="file" id="files" name="files" multiple /><br><br>
+
+  <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format). -->
+
+   <input type="email" maxlength="10" placeholder="deamo@thaap.xom" value="vinod" required>
+
+  <!-- The input required attribute specifies that an input field must be filled out before submitting the form. -->
+
+  <!-- The input autofocus attribute specifies that an input field should automatically get focus when the page loads. -->
+   <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus autocomplete="off"><br>
+
+  <!-- The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. -->
+
+  <!-- The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element. -->
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+
+        </form>
+      </div>
+    </form>
+  </body>
+</html>

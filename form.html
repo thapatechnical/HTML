@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+      .labelstyle {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Registration Form</h1>
+    <hr />
+    <form action="#">
+      <label for="username">username</label>
+      <input type="text" id="username" />
+      <!--: The <label> element defines a label for several form elements.
+     The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. 
+    The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+    
+    -->
+      <input type="password" name="" id="" />
+      <input type="email" name="" id="" />
+      <input type="number" name="" id="" />
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="range" name="" id="" />
+
+      <!-- 3: The <select> element defines a drop-down list: -->
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <!--4: The <textarea> element defines a multi-line input field (a text area): 
+      The rows attribute specifies the visible number of lines in a text area.
+      The cols attribute specifies the visible width of a text area.-->
+      <textarea name="" id="" cols="30" rows="20"></textarea>
+
+      <!--5:The <button> element defines a clickable button: -->
+      <button onclick="alert('Hii')">clikc me</button>
+
+      <!--6: The <fieldset> element is used to group related data in a form.
+             The <legend> element defines a caption for the <fieldset> element -->
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Portfolio:</legend>
+          <label id="indilablestyle" class="labelstyle" for="fname"
+            >First name:</label
+          ><br />
+          <input type="text" id="fname" name="fname" value="John" /><br />
+
+          <label id="indilablestyle" class="labelstyle" for="lname"
+            >Last name:</label
+          ><br />
+          <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </form>
+  </body>
+</html>
